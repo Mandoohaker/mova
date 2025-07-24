@@ -24,6 +24,7 @@
       font-size: 3em;
       margin-bottom: 40px;
       color: #38bdf8;
+      text-shadow: 1px 1px 3px #000;
     }
 
     .services-container {
@@ -38,13 +39,13 @@
       background: #1e293b;
       padding: 25px;
       border-radius: 16px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .service-card:hover {
       transform: scale(1.03);
-      box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.5);
     }
 
     .service-card h2 {
@@ -52,17 +53,17 @@
       margin-bottom: 10px;
     }
 
-    .service-card p {
-      font-size: 0.95em;
-      margin-bottom: 15px;
+    .service-card li {
+      margin-left: 20px;
       color: #cbd5e1;
+      line-height: 1.5;
     }
 
     .price {
       font-weight: bold;
       color: #22c55e;
       font-size: 1.2em;
-      margin-bottom: 10px;
+      margin: 15px 0;
     }
 
     .contact-btn {
@@ -74,7 +75,7 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .contact-btn:hover {
@@ -88,92 +89,99 @@
 
   <div class="services-container">
 
+    <!-- كرر لكل كارت -->
     <div class="service-card">
       <h2>📍 Graphic & Branding Design</h2>
-     <li>Logo creation for YouTube, startups, social brands</li>
-        <li>Unique & tailored visual identities</li>
-        <li>Full branding packages</li>
+      <li>Logo creation for YouTube, startups, social brands</li>
+      <li>Unique & tailored visual identities</li>
+      <li>Full branding packages</li>
       <div class="price">80-350$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
 
     <div class="service-card">
-        <h2>📍 Web & UI Design</h2>
+      <h2>📍 Web & UI Design</h2>
       <li>Professional website design with modern UI</li>
-        <li>Advanced Login Page Interface Design</li>
-        <li>Responsive and clean user experience</li>
+      <li>Advanced Login Page Interface Design</li>
+      <li>Responsive and clean user experience</li>
       <div class="price">550-3200$</div>
-     
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
 
     <div class="service-card">
-          <h2>📍Facebook Account Recovery Service</h2>
-      <li>Unban locked Facebook accounts</li>
-      <li>Bypass two-factor authentication (2FA)</li>
-      <li>Remove account limitations and reports</li>
-
-      
+      <h2>📍 Facebook Account Recovery</h2>
+      <li>Unban locked accounts</li>
+      <li>Bypass 2FA</li>
+      <li>Remove account limitations</li>
       <div class="price">450-1500$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
-    </div>
-      
-
-    <div class="service-card">
-      <h2> 📍 Content Writing & Copywriting </h2>
-       <li>High-conversion copy (web, emails, products)</li>
-        <li>Blog writing, SEO articles, video scripts</li>
-        <li>Hook writing & creative headlines</li>
-        <li>Consistent brand tone-of-voice development</li>
-      <div class="price">50-350</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
 
     <div class="service-card">
-      <h2> 📍 Multilingual Translation </h2>
-    <li>Arabic, English, and French translation</li>
-        <li>Culturally accurate, marketing-optimized content</li>
-        <li>Creative localization for brand tone</li>
+      <h2>📍 Content Writing</h2>
+      <li>SEO blogs, ads, video scripts</li>
+      <li>Conversion copy</li>
+      <li>Hook/headline writing</li>
+      <div class="price">50-350$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Translation</h2>
+      <li>Arabic, English, French</li>
+      <li>Marketing/localization</li>
+      <li>Brand tone accuracy</li>
       <div class="price">30-150$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
-        <div class="service-card">
-      <h2> 📍 Remote Marketing & Sales Support </h2>
-       <li>Support for startups and entrepreneurs</li>
-        <li>Writing marketing campaigns & content planning</li>
-        <li>Using Notion, Trello, Google Docs for team collaboration</li>
-      <div class="price">150-600$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
-    </div>
-        <div class="service-card">
-             <h2> 📍 Video Production & Editing </h2>
-        <li>Short-form videos (Reels, Shorts, TikTok)</li>
-        <li>Explainer videos, ads, storytelling</li>
-        <li>Professional editing & sound design</li>
-        <li>Using Adobe Premiere Pro & After Effects</li>
-      <div class="price">50-320$</div>
-      
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
-    </div>
-        <div class="service-card">
-      <h2>📍WhatsApp recovery</h2>
-        <li>Sucess Rate</li>
-        <li>Tat 24 Hours</li>
 
-      <div class="price"> 340-850$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+    <div class="service-card">
+      <h2>📍 Remote Marketing</h2>
+      <li>Startup marketing</li>
+      <li>Campaign writing</li>
+      <li>Using Notion/Trello</li>
+      <div class="price">150-600$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
-        <div class="service-card">
-            <h2> 📍 Social Media Management </h2>
-       <li>Full account management (posting, engaging, reporting)</li>
-        <li>Growth strategies for Arabic audiences (especially GCC)</li>
-        <li>Trend analysis & audience behavior tracking</li>
-        <li>Managing comments/messages & optimizing engagement</li>
+
+    <div class="service-card">
+      <h2>📍 Video Production</h2>
+      <li>Reels, Shorts, TikTok</li>
+      <li>Ads & storytelling</li>
+      <li>Pro editing with Adobe</li>
+      <div class="price">50-320$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 WhatsApp Recovery</h2>
+      <li>Success Rate</li>
+      <li>TAT 24h</li>
+      <div class="price">340-850$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Social Media Management</h2>
+      <li>Arabic audience growth</li>
+      <li>Daily posting/engagement</li>
+      <li>Trend & comment management</li>
       <div class="price">200-650$</div>
-      <a href="https://web.telegram.org/k/#@wonryy" class="contact-btn">Order now!</a>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
     </div>
-    
+  </div>
+
+  <script>
+    function openTelegram() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const username = "wonryy";
+      if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = `tg://resolve?domain=${username}`;
+      } else {
+        window.open(`https://web.telegram.org/k/#@${username}`, "_blank");
+      }
+    }
+  </script>
 
 </body>
 </html>
-  
